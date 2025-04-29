@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Blogs</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1a1a1a;
+      font-family: monospace;
+      color: #cccccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    header {
+      margin-bottom: 4rem;
+    }
+
+    .glitch {
+      position: relative;
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: #f2f2f2;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid rgba(255,255,255,0.75);
+      width: 0;
+      animation: typing 2.5s steps(24, end) forwards, blink 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 24ch }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    p.subtitle {
+      font-size: 1rem;
+      color: #999;
+      margin-top: 0.5rem;
+    }
+
+    .nav-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .nav-block {
+      border: 2px solid #444;
+      padding: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #2a2a2a;
+      color: #cccccc;
+      transition: all 0.2s ease;
+    }
+
+    .nav-block:hover {
+      background-color: #444;
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="glitch">BLOGS FOR THE ASSIGNMENT</div>
+    <p class="subtitle">The followings are the blogs I have written.</p>
+  </header>
+
+  <div class="nav-blocks">
+    <a href="./list.html">
+      <div class="nav-block">Blog 1: The List</div>
+    </a>
+    <a href="./questions.html">
+      <div class="nav-block">Blog 2: The Questions</div>
+    </a>
+    <a href="./review.html">
+      <div class="nav-block">Blog 3: The Review</div>
+    </a>
+    <a href="./marketing.html">
+      <div class="nav-block">Blog 4: The Marketing</div>
+    </a>
+  </div>
+
+  <footer>
+    LAST UPDATED: NEVER
+  </footer>
+</body>
+</html>
